@@ -37,11 +37,13 @@ header h1 {
 
 .tagline {
   margin: 0.25rem 0;
-  color: var(--muted);
+  color: var(--text);   /* primary */
 }
 
 .tagline.en {
-  font-size: 0.95rem;
+font-size: 0.95rem;
+color: var(--text);
+opacity: 0.75;
 }
 
 main {
