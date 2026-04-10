@@ -84,6 +84,33 @@
       <li><a href="https://rebeka.app/impressum">Impressum</a></li>
     </ul>
 
+    <!-- ---- PivotScanner ---- -->
+    <h3>PivotScanner — Maritime Vessel Compliance</h3>
+    <p>
+      <a href="https://pivotscanner.com"><strong>PivotScanner</strong></a>
+      (pivotscanner.com) is a business-to-business (B2B) SaaS platform for
+      maritime vessel compliance management. It enables small fleet operators
+      (1–10 vessels) to track crew certificates (STCW), manage planned
+      maintenance systems (PMS), prepare for port state control (PSC)
+      inspections, and maintain compliance documentation — including in
+      offline environments such as vessels at sea.
+    </p>
+    <p>
+      Markets: Global — small and mid-size shipping companies, particularly
+      in emerging markets.
+    </p>
+    <p>
+      PivotScanner operates independently from Rebeka and the assessment
+      writing tools below. It has its own domain, user accounts, data
+      infrastructure, and billing (via <strong>Paddle</strong> as Merchant
+      of Record).
+    </p>
+    <p><strong>Legal pages for PivotScanner:</strong></p>
+    <ul>
+      <li><a href="https://pivotscanner.com/privacy">Privacy Summary</a></li>
+      <li><a href="https://pivotscanner.com/impressum">Impressum</a></li>
+    </ul>
+
     <!-- ---- Assessment Writing Support Tools ---- -->
     <h3>Assessment Writing Support Tools</h3>
     <p>
@@ -167,6 +194,29 @@
         as retained under the <strong>Data Protection Act 2018</strong> (UK GDPR).
         Both frameworks are substantively equivalent; where this summary refers to "GDPR,"
         the reference includes both the EU and UK instruments.
+      </p>
+
+      <h3>PivotScanner</h3>
+      <p>
+        <strong>PivotScanner</strong> (<a href="https://pivotscanner.com">pivotscanner.com</a>)
+        is a B2B maritime vessel compliance management platform. It processes
+        company data (fleet operator names, contact details), vessel data (vessel names,
+        IMO numbers, flag states), crew data (names, nationalities, certificate numbers,
+        certificate types, expiry dates), maintenance records, and PSC inspection
+        checklists. Payment data is handled via Paddle as Merchant of Record — we do
+        not store card details.
+      </p>
+      <p>
+        PivotScanner is designed for offline-first operation. Crew and vessel data is
+        cached locally on the user's device (IndexedDB) so that the application works
+        at sea or in ports with limited connectivity. Data syncs to our servers
+        (<strong>Supabase</strong>) when a connection is available.
+      </p>
+      <p>
+        PivotScanner's data processing is governed by its own
+        <a href="https://pivotscanner.com/privacy">Privacy Summary</a>.
+        For the full legal text, see the
+        <a href="#datenschutz">Datenschutzerklärung</a> below.
       </p>
 
       <h3>Rebeka</h3>
@@ -336,12 +386,18 @@
       Diese Datenschutzerklärung gilt für die Website
       <a href="https://www.upskillagents.de">www.upskillagents.de</a>
       sowie für alle von der Gesellschaft betriebenen Softwareanwendungen,
-      insbesondere <a href="https://rebeka.app">Rebeka</a>,
+      insbesondere <a href="https://pivotscanner.com">PivotScanner</a>,
+      <a href="https://rebeka.app">Rebeka</a>,
       <a href="https://www.writingpad.co.uk">WritingPAD</a>,
       <a href="https://www.proprecept.ie">ProPrecept Ireland</a>
       und <a href="https://www.facultywizard.com">FacultyWizard</a>.
       Jedes Produkt ist eine eigenständige Anwendung mit eigener Domain,
       eigenem Benutzerkonto und eigener Abrechnungsinfrastruktur.
+    </p>
+    <p>
+      <strong>PivotScanner</strong> (<a href="https://pivotscanner.com">pivotscanner.com</a>)
+      ist eine B2B-SaaS-Plattform für maritimes Compliance-Management.
+      Für PivotScanner-spezifische Datenschutzhinweise siehe Abschnitt 5a) unten.
     </p>
     <p>
       <strong>Rebeka</strong> verfügt über eine eigene, ausführliche
@@ -380,6 +436,82 @@
       Die Produkt-Websites (Rebeka, WritingPAD, ProPrecept Ireland, FacultyWizard) werden über
       <strong>Vercel, Inc.</strong> (USA) gehostet. Es gelten die unter
       Abschnitt 9a) genannten Regelungen zur internationalen Datenübermittlung.
+    </p>
+
+    <h3>5a. PivotScanner – Ergänzende Datenschutzhinweise</h3>
+    <p>
+      Die folgenden Hinweise gelten für die Webanwendung
+      <a href="https://pivotscanner.com">PivotScanner</a>.
+    </p>
+
+    <h4>a) Art der Verarbeitung</h4>
+    <p>
+      PivotScanner ist eine webbasierte B2B-Plattform für das Compliance-Management
+      von Handelsschiffen. Die Anwendung verarbeitet Unternehmensdaten (Firmenname,
+      Kontaktdaten), Schiffsdaten (Schiffsname, IMO-Nummer, Flaggenstaat),
+      Besatzungsdaten (Namen, Staatsangehörigkeiten, Zertifikatsnummern,
+      Zertifikatstypen gemäß STCW, Ablaufdaten), Wartungsaufzeichnungen
+      und PSC-Inspektionschecklisten.
+    </p>
+    <p>
+      PivotScanner richtet sich an kleine bis mittelgroße Reedereien
+      (1–10 Schiffe) und ist für den Einsatz unter eingeschränkter
+      Netzwerkverfügbarkeit (z.&nbsp;B. auf See, in Häfen mit begrenzter
+      Konnektivität) ausgelegt.
+    </p>
+
+    <h4>b) Offline-Verarbeitung und lokale Datenspeicherung</h4>
+    <p>
+      PivotScanner ist als Offline-first-Anwendung konzipiert.
+      Schiffs- und Besatzungsdaten werden lokal auf dem Endgerät des Nutzers
+      zwischengespeichert (<strong>IndexedDB</strong>), um den Betrieb
+      auch ohne Internetverbindung zu ermöglichen.
+      Wenn eine Verbindung verfügbar ist, werden die Daten mit unseren
+      Servern (<strong>Supabase</strong>) synchronisiert.
+    </p>
+    <p>
+      Die lokale Speicherung dient ausschließlich der Funktionsfähigkeit
+      der Anwendung und der Datensicherheit (Vermeidung von Datenverlust
+      bei Verbindungsunterbrechungen).
+      Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragserfüllung)
+      und Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an
+      Datensicherheit und Betriebskontinuität).
+    </p>
+
+    <h4>c) Benutzerkonto und Authentifizierung</h4>
+    <p>
+      Account-Daten (z.&nbsp;B. Name, E-Mail-Adresse, Unternehmenszugehörigkeit)
+      werden über <strong>Supabase Auth</strong> verarbeitet.
+      Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragserfüllung).
+    </p>
+
+    <h4>d) Zahlungsabwicklung</h4>
+    <p>
+      Bei kostenpflichtigen Abonnements erfolgt die Zahlungsabwicklung über
+      <strong>Paddle.com Market Ltd</strong> (UK) als Merchant of Record.
+      Paddle ist eigenständiger Verantwortlicher für Zahlungs- und
+      Abrechnungsdaten. Zahlungsdaten gelangen nicht auf unsere Server.
+      Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO.
+    </p>
+
+    <h4>e) Mehrmandantenfähigkeit und Datentrennung</h4>
+    <p>
+      PivotScanner ist mandantenfähig auf Unternehmens-/Flottenebene.
+      Die Datentrennung erfolgt durch <strong>Row-Level Security (RLS)</strong>
+      auf Datenbankebene (PostgreSQL / Supabase). Jedes Unternehmen kann
+      ausschließlich auf seine eigenen Schiffs-, Besatzungs- und
+      Compliance-Daten zugreifen.
+    </p>
+
+    <h4>f) Besondere Kategorien personenbezogener Daten</h4>
+    <p>
+      PivotScanner verarbeitet Besatzungsdaten, die Staatsangehörigkeiten
+      umfassen können. Diese werden ausschließlich zur Erfüllung
+      regulatorischer Anforderungen (STCW-Zertifizierung, flaggenstaatliche
+      Vorschriften, PSC-Inspektionen) verarbeitet.
+      Rechtsgrundlage: Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragserfüllung)
+      in Verbindung mit Art.&nbsp;9 Abs.&nbsp;2 lit.&nbsp;b DSGVO
+      (Erfüllung arbeitsrechtlicher Pflichten).
     </p>
 
     <h3>5. WritingPAD – Ergänzende Datenschutzhinweise</h3>
@@ -675,13 +807,13 @@
           <td>Paddle</td>
           <td>Paddle.com Market Ltd (UK)</td>
           <td>Zahlungsabwicklung als Merchant of Record, Steuerberechnung</td>
-          <td>Rebeka</td>
+          <td>Rebeka, PivotScanner</td>
         </tr>
         <tr>
           <td>Supabase</td>
           <td>Supabase, Inc. (USA)</td>
-          <td>Datenbank-Hosting, Datenspeicherung</td>
-          <td>Rebeka</td>
+          <td>Datenbank-Hosting, Datenspeicherung, Authentifizierung</td>
+          <td>Rebeka, PivotScanner</td>
         </tr>
         <tr>
           <td>Anthropic API</td>
@@ -817,7 +949,8 @@
     <a href="#datenschutz">Datenschutzerkl&auml;rung</a> &middot;
     <a href="#impressum">Impressum</a> &middot;
     <a href="https://rebeka.app/privacy">Rebeka Privacy</a> &middot;
-    <a href="https://rebeka.app/terms">Rebeka Terms</a>
+    <a href="https://rebeka.app/terms">Rebeka Terms</a> &middot;
+    <a href="https://pivotscanner.com/privacy">PivotScanner Privacy</a>
   </div>
 </footer>
 </body>
