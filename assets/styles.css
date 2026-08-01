@@ -149,3 +149,63 @@ nav a:hover {
 /*footer .links a {
   color: var(--teal);
 }*/
+
+/* ================================================= */
+/* Additions: Beratung / Consulting restructure       */
+/* ================================================= */
+
+/* "Rechtliches auf einen Blick" table-of-contents box */
+.toc {
+  margin: 2rem 0 2.5rem;
+}
+
+.toc-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.toc-list li {
+  line-height: 1.5;
+}
+
+/* Short English text following a German paragraph (German-first convention) */
+p.en {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Draft / under-legal-review notice banner */
+.notice-draft {
+  border: 1px solid #c9a227;
+  border-left: 4px solid #c9a227;
+  border-radius: 8px;
+  background: #fffbea;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.notice-draft p {
+  margin: 0;
+}
+
+.notice-draft p + p {
+  margin-top: 0.4rem;
+}
+
+.notice-draft strong {
+  color: #8a6d1a;
+}
+
+.notice-draft .stand {
+  margin-top: 0.4rem;
+  color: #8a6d1a;
+}
